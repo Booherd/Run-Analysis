@@ -1,0 +1,28 @@
+The following variables were used in the run_analysis.R script
+
+features: table- table. loaded from txt file containing variable names
+activity_labels- table. loaded from txt file containing activity names and their corresponding numbers
+subject_test- table. subject numbers loaded from subject_test.txt
+subject_train- table. subject numbers loaded from subject_train.txt
+x_test- table. values for all 561 variables and 2947 obervations from x_test.txt
+x_train- table. values for all 561 variables and 7352 obervations from x_train.txt
+y_test- table. activity numbers for data in x_test
+y_train- table. activity numbers for data in x_train
+test_data- table. combined data for all test observations
+train_data- table. combined data for all train observations
+combined_data- table. All test and train data combined
+feature_labels- vector. variable names extracted from "features" table
+combined_labels- vector. all variable names, with "subject" and "activity" appended to front for use as column names
+mean_index- vector. index locations for all variable names containing the string "mean()" to be included
+mean_freq- vector. index locations for all variable names containing the string "meanFreq" to be excluded
+std_index- vector. index locations for all variable names containing the string "std()" to be included
+tidy_index- vector. index numbers for all mean and std variables, as well as subject and activity
+tidy_data- table. all data from combined_data for the means and stds of variables
+summary_data- table. the means of each variable by subject and activity
+subjects- vector. subjects for each observation taken from tidy_data
+sub_index- vector. index numbers of locations of subject matching each subject 1:30
+sub_iso- table. subset of all data for each subject
+acts- vector. activities for each observation taken from sub_iso
+act_index. vector. index numbers of locations of activities matching each activity 1:6
+sub_acts- table. subset of data for each each activity per subject
+mean_data- vector. means for all variables matching subject and activity
